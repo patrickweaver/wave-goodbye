@@ -1,0 +1,16 @@
+{
+  "name": "wave-goodbye",
+  "version": "0.0.1",
+  "description": "\"A website that kills zoom when you wave\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Patrick Weaver",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "shelljs": "^0.8.4"
+  }
+}
