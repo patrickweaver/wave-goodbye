@@ -11,8 +11,9 @@ app.get("/goodbye", (req, res) => {
   const pid = findPid.split("*")[0]
   console.log(`Killing Process: ${pid}`);
   if (pid) {
-    //shell.exec(`kill -9 ${pid}`);
-    shell.exec(`pkill zoom`)
+    //shell.exec(`kill -2 ${pid}`);
+    shell.exec('./goodbye.sh')
+    //shell.exec(`pkill zoom`)
     res.json({goodbye: pid});
   } else {
     res.json({goodbye: null});
